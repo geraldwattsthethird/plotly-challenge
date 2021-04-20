@@ -45,10 +45,15 @@ function plotCharts(id) {
 
         Object.defineProperties(singleMetadata).forEach(([key, value]) => {
 
-            
+            var newTable = demographicsTable.append("ul");
+            newTable.attr("class", "list-group list-group-flush");
+
+            var tableItem = newTable.append("li");
+            tableItem.attr("class", "list-group-item")
+
         }
         
-        )}
+        )};
             
-            ))
+        ))
 }
