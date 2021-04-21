@@ -49,11 +49,21 @@ function plotCharts(id) {
             newTable.attr("class", "list-group list-group-flush");
 
             var tableItem = newTable.append("li");
-            tableItem.attr("class", "list-group-item")
+            tableItem.attr("class", "list-group-item");
 
-        }
+            tableItem.text(`${key}: ${value}`);
         
         )};
+
+        var singleSample = data.samples.filter(sample => sample.id == id)[0];
+        var otuIds = [];
+        var otuLabels = [];
+        var sampleValues = [];
+
+        Object.defineProperties(singleSample).forEach(([key, value]){
+
+            
+        })
             
         ))
 }
